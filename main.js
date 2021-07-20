@@ -78,9 +78,9 @@ function checkAnswer(n) {
 function showResult(){
     mainBtn.innerText = 'Show Result';
     result.style.display = 'flex';
-    resultNum.innerText = (score / counter).toFixed(1);
-    if (resultNum.innerText === 'infinity'){
-        resultNum.innerText === 0
+    resultNum = (score / counter).toFixed(1);
+    if (resultNum === 1){
+        resultNum.innerText === 3;
     }
 }
 resultBtn.addEventListener('click', function (){
