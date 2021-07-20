@@ -2,7 +2,8 @@ let mainBtn = document.querySelector('.final-btn > button');
 let mainQuestion = document.querySelector('.main-question > h3');
 let wrapper = document.querySelector('.btns-wrapper');
 let result = document.querySelector('.result-wrapper');
-let resultNum = document.querySelector('.result-wrapper > p');
+let resultAnswers = document.querySelector('.answers > span')
+let resultQuestions = document.querySelector('.questions > span')
 let resultBtn = document.querySelector('.result-wrapper > button');
 let correctAnswer;
 let score = 0;
@@ -78,10 +79,8 @@ function checkAnswer(n) {
 function showResult(){
     mainBtn.innerText = 'Show Result';
     result.style.display = 'flex';
-    resultNum = (score / counter).toFixed(1);
-    if (resultNum === 1){
-        resultNum.innerText === 3;
-    }
+    resultAnswers.innerText = score;
+    resultQuestions.innerText = counter;
 }
 resultBtn.addEventListener('click', function (){
     document.location.reload();
