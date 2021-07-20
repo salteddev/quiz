@@ -78,7 +78,7 @@ function checkAnswer(n) {
 function showResult(){
     mainBtn.innerText = 'Show Result';
     result.style.display = 'flex';
-    resultNum.innerText = (counter / score).toFixed(1);
+    resultNum.innerText = (score / counter).toFixed(1);
     if (resultNum.innerText === 'infinity'){
         resultNum.innerText === 0
     }
