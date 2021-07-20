@@ -67,6 +67,10 @@ function wrongAnswer(){
     counter++;
     document.body.style.background = '#f34848';
     activeMainBtn();
+    let answerBtns = document.querySelectorAll('.btns-wrapper > button')
+    answerBtns.forEach(function (item){
+        item.disabled = true;
+    });
 }
 function checkAnswer(n) {
     if (correctAnswer == n){
