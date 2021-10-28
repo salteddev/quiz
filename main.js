@@ -23,11 +23,11 @@ mainBtn.addEventListener('click', function (){
     }
 })
 function thirdQuestion(){
-    displayQuestion('Mom', 'Dad', 'Son', 'Daughter', 'Dog', 'Son');
+    displayQuestion('Какой сегодня год', '1998', '2001', '2021', '2020', '2021');
     disableMainBtn()
 }
 function  secondQuestion(){
-    displayQuestion('Slon', 'ruba', 'voron', 'begemot', 'jaba', 'jaba');
+    displayQuestion('Какой завтра год', '2021', '1998', '2020', '2001', '2021');
     disableMainBtn();
 }
 function disableMainBtn(){
@@ -42,7 +42,7 @@ function activeMainBtn(){
     }
 }
 function startQuiz(){
-    displayQuestion('Sobaka', 'sobaka', 'kit', 'zmeya', 'slon', 'kit');
+    displayQuestion('Какой вчера был год', '2020', '2021', '1998', '2001', '2021');
     mainBtn.innerText = 'Next question';
     disableMainBtn();
 }
@@ -63,7 +63,6 @@ function rightAnswer(){
     });
 }
 function wrongAnswer(){
-    console.log(false)
     counter++;
     document.body.style.background = '#f34848';
     activeMainBtn();
